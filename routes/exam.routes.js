@@ -5,6 +5,7 @@ module.exports = app => {
   router.get("/", exam.topMovies);
   router.get("/genre", exam.getAllGenre);
   router.get("/title", exam.searchMovie);
+  router.get("/people", exam.searchPeople);
   router.get("/genre/search", exam.searchGenre);
   app.use('/api/movies', router);
 };
